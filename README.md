@@ -1,20 +1,15 @@
-# ÏîÄ¿Ãû¼°¼ò½é
-* Ö÷ÒªÊÇ¼à¿ØandroidµÄcrashĞÅÏ¢£¬²¢·¢Ò»¸öhttpÇëÇóµ½ÎÒµÄ[×Ô¶¯»¯app²âÊÔ¿ò¼Ü](https://github.com/284772894/appiumn_auto)
+# é¡¹ç›®ååŠç®€ä»‹
+* ä¸»è¦æ˜¯ç›‘æ§androidçš„crashä¿¡æ¯ï¼Œå¹¶å‘ä¸€ä¸ªhttpè¯·æ±‚åˆ°æˆ‘çš„[è‡ªåŠ¨åŒ–appæµ‹è¯•æ¡†æ¶](https://github.com/284772894/appiumn_auto)
 
-# ÓÃ·¨
+# ç”¨æ³•
 
-## ÏÂÔØÏîÄ¿Ö±½Ó¿´Ô´Âë¼´¿É
 
-```
-git clone git@github.com:284772894/CrashHandler.git
-```
-
-## ´ò°üjar
+## æ‰“åŒ…jar
 
 ![1.png](img/1.png "1.png")
 
-## ÆäËûappÒıÓÃ
-* AndroidManifest¼ÓÈ¨ÏŞ
+## å…¶ä»–appå¼•ç”¨
+* AndroidManifeståŠ æƒé™
 
 ```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -22,7 +17,7 @@ git clone git@github.com:284772894/CrashHandler.git
 <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 ```
 
-* AndroidManifestÉèÖÃapplicationµÄÖµ
+* AndroidManifestè®¾ç½®applicationçš„å€¼
 
 ```
 <application android:allowBackup="true" 
@@ -31,11 +26,11 @@ git clone git@github.com:284772894/CrashHandler.git
       android:name=".CrashApplication">
 ```
 
-* ĞèÒªÔÚ×Ô¼ºµÄapplicationÒıÓÃ
+* éœ€è¦åœ¨è‡ªå·±çš„applicationå¼•ç”¨
 
 ```
 import android.app.Application;
-import com.shikun.crashhandler.*;  #ÒıÓÃ´ò°üµÄjar
+import com.shikun.crashhandler.*;  #å¼•ç”¨æ‰“åŒ…çš„jar
 public class CrashApplication extends Application  {
     @Override  
     public void onCreate() { 
@@ -46,9 +41,9 @@ public class CrashApplication extends Application  {
 }
 ```
 
-# ÈÕÖ¾·ÖÎö
-* ×Ô¼ºËæ±ãÖÆÔìÒ»¸öÉÁÍËÔËĞĞ³ÌĞò£¬Äã»á·¢ÏÖÒ»¾äºÜÓÑºÃµÄ¡°ºÜ±§Ç¸£¬³ÌĞòÔâÓöÒì³££¬¼´½«ÍË³ö¡±´úÌæÁËÀä±ù±ùµÄ¾¯¸æ¿ò
-* ÎÒÃÇ´ò¿ªDDMS£¬ÔÚmnt/sdcard/Crash/Ä¿Â¼ÏÂÃæ·¢ÏÖÁËÓĞÒ»¸öÎÄ¼ş£¬´ò¿ªÎÄ¼ş£¬ÎÒÃÇ¿ÉÒÔ¿´µ½
+# æ—¥å¿—åˆ†æ
+* è‡ªå·±éšä¾¿åˆ¶é€ ä¸€ä¸ªé—ªé€€è¿è¡Œç¨‹åºï¼Œä½ ä¼šå‘ç°ä¸€å¥å¾ˆå‹å¥½çš„â€œå¾ˆæŠ±æ­‰ï¼Œç¨‹åºé­é‡å¼‚å¸¸ï¼Œå³å°†é€€å‡ºâ€ä»£æ›¿äº†å†·å†°å†°çš„è­¦å‘Šæ¡†
+* æˆ‘ä»¬æ‰“å¼€DDMSï¼Œåœ¨mnt/sdcard/Crash/ç›®å½•ä¸‹é¢å‘ç°äº†æœ‰ä¸€ä¸ªæ–‡ä»¶ï¼Œæ‰“å¼€æ–‡ä»¶ï¼Œæˆ‘ä»¬å¯ä»¥çœ‹åˆ°
 
 ```
 versionCode = 1  
